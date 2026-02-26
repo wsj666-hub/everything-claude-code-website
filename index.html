@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything Claude Code - 完整的 Claude Code 配置集合</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Everything Claude Code</div>
+            <ul class="nav-links">
+                <li><a href="#features">功能特性</a></li>
+                <li><a href="#quickstart">快速开始</a></li>
+                <li><a href="#agents">Agents</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#commands">Commands</a></li>
+                <li><a href="https://github.com/affaan-m/everything-claude-code" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Everything Claude Code</h1>
+            <p class="tagline">完整的 Claude Code 配置集合</p>
+            <p class="description">来自 Anthropic 黑客松冠军的生产级 agents、skills、hooks、commands、rules 和 MCP 配置</p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Stars</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">6K+</span>
+                    <span class="stat-label">Forks</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">13</span>
+                    <span class="stat-label">Agents</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">45</span>
+                    <span class="stat-label">Skills</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">32</span>
+                    <span class="stat-label">Commands</span>
+                </div>
+            </div>
+            <a href="#quickstart" class="cta-button">开始使用</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>功能特性</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>专业 Agents</h3>
+                <p>13 个专业子代理：规划、架构、TDD、代码审查、安全审查、数据库审查、E2E测试等</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>丰富的 Skills</h3>
+                <p>45 个技能：Python、Go、Java、Django、Spring Boot、PostgreSQL、Docker 等最佳实践</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔗</div>
+                <h3>智能 Hooks</h3>
+                <p>自动化工作流：格式化、测试、验证、持续学习、内存持久化</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>快速命令</h3>
+                <p>32 个斜杠命令：/plan、/tdd、/e2e、/verify、/code-review、/security-scan 等</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>跨平台支持</h3>
+                <p>完全支持 Windows、macOS、Linux，所有脚本已用 Node.js 重写</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>持续学习</h3>
+                <p>自动从会话中提取可复用模式，支持直觉导入导出和技能进化</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="quickstart" class="quickstart">
+        <h2>快速开始</h2>
+        <p class="section-desc">2 分钟内完成安装</p>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>安装插件</h3>
+                <pre><code>/plugin marketplace add affaan-m/everything-claude-code
+/plugin install everything-claude-code@everything-claude-code</code></pre>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>安装 Rules</h3>
+                <pre><code>git clone https://github.com/affaan-m/everything-claude-code.git
+cd everything-claude-code
+./install.sh typescript</code></pre>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>开始使用</h3>
+                <pre><code>/plan "Add user authentication"</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agents Section -->
+    <section id="agents" class="components-section">
+        <h2>Agents <span class="count">13 个专业代理</span></h2>
+        <p class="section-desc">点击查看详细功能和使用说明</p>
+        <div class="components-grid" id="agents-grid">
+            <!-- 动态加载 -->
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="components-section alt-bg">
+        <h2>Skills <span class="count">45 个技能</span></h2>
+        <p class="section-desc">点击查看详细模式和最佳实践</p>
+        <div class="components-grid" id="skills-grid">
+            <!-- 动态加载 -->
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section id="commands" class="components-section">
+        <h2>Commands <span class="count">32 个斜杠命令</span></h2>
+        <p class="section-desc">点击查看详细用法和工作流程</p>
+        <div class="components-grid" id="commands-grid">
+            <!-- 动态加载 -->
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>准备好提升开发效率了吗？</h2>
+        <p>立即安装 Everything Claude Code，体验 AI 辅助开发的最佳实践</p>
+        <a href="https://github.com/affaan-m/everything-claude-code" target="_blank" class="cta-button">访问 GitHub</a>
+    </section>
+
+    <footer class="footer">
+        <p>Everything Claude Code 由 <a href="https://github.com/affaan-m" target="_blank">affaan-m</a> 开发维护</p>
+        <p>MIT License | Anthropic Hackathon Winner</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-icon" id="modal-icon"></span>
+                <h2 id="modal-title"></h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- 动态内容 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
